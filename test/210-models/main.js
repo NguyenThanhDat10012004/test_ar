@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log("TẠO MINDAR");
     const mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
-      imageTargetSrc: '../../assets/targets/targets.mind',
+      imageTargetSrc: './targets.mind',
     });
     const {renderer, scene, camera} = mindarThree;
 
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. TẢI MODEL (Sau khi đã sửa lỗi CSP)
     try {
-      const raccoon = await loadGLTF('../../assets/models/zoo.glb');
+      const raccoon = await loadGLTF('https://nguyenthanhdat10012004.github.io/anki_ar/data/travel/beach.glb');
       console.log("RACCOON:", raccoon);
       raccoon.scene.scale.set(0.1, 0.1, 0.1);
       raccoon.scene.position.set(0, 0, 0);
