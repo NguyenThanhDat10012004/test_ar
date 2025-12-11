@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const raccoon = await loadGLTF('https://nguyenthanhdat10012004.github.io/anki_ar/data/travel/beach.glb');
       console.log("RACCOON:", raccoon);
       raccoon.scene.scale.set(0.1, 0.1, 0.1);
-      raccoon.scene.position.set(0, 0, 0);
+      raccoon.scene.position.set(0, 1, 0);
 
       const anchor = mindarThree.addAnchor(0);
       anchor.group.add(raccoon.scene);
